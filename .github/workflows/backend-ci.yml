@@ -56,7 +56,7 @@ jobs:
 
       - name: Install test dependencies
         working-directory: starter/backend
-        run: pipenv run pip install pytest Flask
+        run: pipenv run pip install pytest Flask Flask-Cors
 
       - name: Run tests
         working-directory: starter/backend
