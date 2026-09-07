@@ -140,7 +140,7 @@ jobs:
       - name: Update deployment image
         run: |
           kubectl set image deployment/backend \
-            backend=536590301081.dkr.ecr.us-east-1.amazonaws.com/backend:${{ github.sha }}
+            backend=935487158902.dkr.ecr.us-east-1.amazonaws.com/backend:${{ github.sha }}
 
       - name: Verify deployment
         run: |
