@@ -78,6 +78,6 @@ jobs:
         working-directory: starter/frontend
         run: npm ci
 
-      - name: Build application
+      - name: Build Docker image
         working-directory: starter/frontend
-        run: npm run build
+        run: docker build -t movie-picture-frontend:test .
